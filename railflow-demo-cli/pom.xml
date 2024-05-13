@@ -4,7 +4,7 @@
 
     <groupId>io.railflow.demo.cli</groupId>
     <artifactId>railflow-demo-cli</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <packaging>jar</packaging>
     <name>railflow-demo-cli</name>
     <description>Railflow demo CLI</description>
