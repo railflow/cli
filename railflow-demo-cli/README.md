@@ -15,7 +15,7 @@ mvn clean package
 Once built, the CLI can be executed as follows.
 
 ```bash
-java -jar railflow-demo-cli-0.0.1.jar [-hV] [--url=<url>] <file>
+java -jar railflow-demo-cli-0.0.5.jar [-hV] [--url=<url>] <file>
 ```
 
 Following options are available.
@@ -58,3 +58,11 @@ Note that this build process by default includes signing of the jars. In order t
 ```
 
 If you want to disable signing, comment out the above section in the `pom.xml`.
+
+## Running the CLI from Maven Central ###
+
+Once the CLI is deployed to Maven Central, one can run it using `mvn` without building from source or downloading the Jar manually.
+
+```bash
+mvn io.railflow.demo.cli:railflow-demo-cli:0.0.5:export -Durl=https://my.alm.url -Dfile=report.file
+```
